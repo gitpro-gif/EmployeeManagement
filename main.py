@@ -10,6 +10,12 @@ def CheckHeath():
     "message":"FastApi  app is working"
   }
 
+@app.get("/about")
+def AbhayFunction():
+  return {
+    "message": "I am abhay"
+  }
+
 @app.post("/")
 def AddEmployee(id: int, name: str, salary: int):
   employee = {
